@@ -44,40 +44,58 @@ img {
   background-color: var(--background-color-document);
 }
 .card {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  max-width: 375px;
+  padding: 2.5rem;
   text-align: center;
   background-color: var(--background-color-card);
+  border-radius: 1rem;
 }
 
 img {
   border-radius: 10.71rem;
+  width: 100px;
+  margin: auto;
 }
 
 h1 {
   color: var(--text-normal);
   font-size: 2rem;
   font-weight: var(--font-weight-name);
+  margin: 2rem 0 0.5rem 0;
 }
 
 .localization {
   color: var(--localization);
   font-weight: var(--font-weight-localization);
+  margin-bottom: 2rem;
 }
 
 .description-job {
   color: var(--text-normal);
   font-weight: var(--font-weight-description-job);
+  margin-bottom: 2rem;
 }
 
 .menu {
+  margin-top: 1rem;
+}
+
+.menu p {
   background-color: var(--background-color-menu);
   font-weight: var(--font-weight-menu);
   color: var(--text-normal);
   cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 1rem 0 1rem 0;
+  margin-bottom: 1rem;
 }
 
-.menu:hover {
+.menu p:last-child {
+  margin: 0;
+}
+
+.menu p:hover {
   background-color: var(--localization);
   color: var(--background-color-menu);
   font-weight: var(--font-weight-menu);
