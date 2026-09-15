@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-  --localisation: hsl(75, 94%, 57%);
-
+  --localization: hsl(75, 94%, 57%);
   --text-normal: hsl(0, 0%, 100%);
 
   --background-color-menu: hsl(0, 0%, 20%);
@@ -10,8 +9,9 @@
   --background-color-document: hsl(0, 0%, 8%);
 
   --font-weight-description-job: 400;
-  --font-weight-menu: 600;
-  --font-weight-name: 700;
+  --font-weight-menu: 700;
+  --font-weight-localization: 600;
+  --font-weight-name: 400;
 }
 
 html {
@@ -41,13 +41,37 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--background-color-document);
 }
 .card {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: var(--background-color-card);
 }
 
 img {
   border-radius: 10.71rem;
+}
+
+h1 {
+  color: var(--text-normal);
+  font-size: 2rem;
+  font-weight: var(--font-weight-name);
+}
+
+.localization {
+  color: var(--localization);
+  font-weight: var(--font-weight-localization);
+}
+
+.description-job {
+  color: var(--text-normal);
+  font-weight: var(--font-weight-description-job);
+}
+
+.menu {
+  background-color: var(--background-color-menu);
+  font-weight: var(--font-weight-menu);
+  color: var(--text-normal);
 }
