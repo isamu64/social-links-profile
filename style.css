@@ -74,4 +74,11 @@ h1 {
   background-color: var(--background-color-menu);
   font-weight: var(--font-weight-menu);
   color: var(--text-normal);
+  cursor: pointer;
+}
+
+.menu:hover {
+  background-color: var(--localization);
+  color: var(--background-color-menu);
+  font-weight: var(--font-weight-menu);
 }
